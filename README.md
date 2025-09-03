@@ -37,6 +37,18 @@ git clone <tu-repositorio>
 cd smart-chatbot
 ```
 
+## 🌐 **Deploy en la Nube**
+
+### **⚠️ IMPORTANTE: Limitaciones de Vercel**
+Este chatbot usa **WebSockets** y **conexiones persistentes**, que **NO son compatibles** con Vercel (plataforma serverless).
+
+**Plataformas recomendadas:**
+- 🚂 **Railway** - Soporta WebSockets (Recomendado)
+- 🌊 **Render** - Soporta aplicaciones Python completas
+- 🎯 **Heroku** - Plataforma tradicional para Python
+
+**Ver archivo `VERCEL_DEPLOY.md` para más detalles.**
+
 ### 2. Instalar Dependencias
 
 ```bash
@@ -58,8 +70,8 @@ Edita el archivo `.env` con tus configuraciones:
 OLLAMA_BASE_URL=http://localhost:11434
 
 # Configuración de GitHub (opcional)
-GITHUB_TOKEN=tu_token_de_github_aqui
-GITHUB_REPO=usuario/repositorio
+GITHUB_TOKEN=your_github_token_here
+GITHUB_REPO=username/repository
 ```
 
 ### 4. Instalar y Configurar Ollama
@@ -245,3 +257,4 @@ Si tienes problemas:
 **¡Disfruta usando tu Smart Chatbot personal! 🚀**
 
 Si te gusta el proyecto, ¡dale una estrella! ⭐
+
